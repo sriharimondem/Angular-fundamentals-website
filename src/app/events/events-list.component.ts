@@ -4,7 +4,6 @@ import {ToastrService} from '../common/toastr.service';
 
 
 @Component({
-    selector: 'app-events-list',
     template: `
     <div>
     <h1>Upcoming angular events</h1>
@@ -24,6 +23,6 @@ export class EventsListComponent implements OnInit {
         this.events = this.eventService.getEvents();
     }
     handleThumbnailClick(eventName) {
-        this.toastr.info(eventName);
+        this.toastr.error(eventName);
     }
 }
