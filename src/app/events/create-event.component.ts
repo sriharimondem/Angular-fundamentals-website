@@ -4,7 +4,7 @@ import {Router} from '@angular/router';
 @Component({
     template: `<h1>New Event</h1><hr>
     <div class='col-md-6'>
-        <h3>[create event form]</h3>
+        <app-contact-form></app-contact-form>
         <br>
         <br>
         <button type='submit' class='btn btn-primary'>Save</button>
